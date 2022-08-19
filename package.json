@@ -28,18 +28,5 @@
     "lint-staged": "^10.2.10",
     "prettier": "2.0.5",
     "ts-jest": "^26.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run lint && npm run test:ci"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js}": [
-      "prettier --write",
-      "eslint --cache --fix",
-      "git add"
-    ]
   }
 }
